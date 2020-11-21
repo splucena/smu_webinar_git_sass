@@ -41,6 +41,12 @@ main {
     @include center;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $global-padding;
+}
+
 ul {
     li {
         display: inline-block;
@@ -75,16 +81,22 @@ table {
 
     th {
         background-color: $primary-color;
-        color: $white-color
+        color: $white-color;
     }
 
     td {
         color: $primary-color;
     }
+
+    td,
+    th {
+        padding: $global-padding;
+    }
 }
 
 footer {
     padding: $global-padding;
+    text-align: center;
 }
 
 $sizes: (2em, 1.75em, 1.5em, 1.25em, 1em, 0.75em);

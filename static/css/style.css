@@ -17,6 +17,12 @@ main {
   margin-right: auto;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
 ul li {
   display: inline-block;
 }
@@ -49,9 +55,14 @@ table th {
 table td {
   color: #24305E;
 }
+table td,
+table th {
+  padding: 10px;
+}
 
 footer {
   padding: 10px;
+  text-align: center;
 }
 
 h1 {
