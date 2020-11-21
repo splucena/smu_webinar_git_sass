@@ -1,5 +1,87 @@
-.small-font {
-  font-size: 8px;
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #A8D0E6;
+  margin: 0;
+}
+
+header {
+  background-color: #24305E;
+  padding: 10px;
+}
+
+main {
+  padding: 10px;
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+ul li a:link {
+  color: #FFF;
+}
+ul li a:visited {
+  color: #A8D0E6;
+}
+ul li a:hover {
+  color: #F8E9A1;
+}
+ul li a:active {
+  color: #F8E9A1;
+}
+
+table {
+  border-collapse: collapse;
+}
+table th {
+  background-color: #24305E;
+  color: #FFF;
+}
+table td {
+  color: #24305E;
+}
+
+footer {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Playfair Display", serif;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-family: "Playfair Display", serif;
+}
+
+h5 {
+  font-size: 1em;
+  font-family: "Playfair Display", serif;
+}
+
+h6 {
+  font-size: 0.75em;
+  font-family: "Playfair Display", serif;
 }
 
 /*# sourceMappingURL=style.css.map */

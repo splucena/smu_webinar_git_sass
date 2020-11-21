@@ -1,5 +1,97 @@
-$hello-world-small-font: 8px;
+@function multiply($a, $b) {
+    @return ($a * $b);
+}
 
-.small-font {
-    font-size: $hello-world-small-font;
+@mixin center {
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$primary-color: #24305E;
+$secondary-color: #374785;
+$tertiary-color: #F76C6C;
+$background-color: #A8D0E6;
+$border-color: #F8E9A1;
+$white-color: #FFF;
+$black-color: #000;
+
+$global-padding: multiply(5, 2px);
+
+$font-serif:'Playfair Display',
+serif;
+
+$font-sans-serif: 'Source Sans Pro',
+sans-serif;
+
+body {
+    font-family: $font-sans-serif;
+    background-color: $background-color;
+    margin: 0;
+}
+
+header {
+    background-color: $primary-color;
+    padding: $global-padding;
+}
+
+main {
+    padding: $global-padding;
+    @include center;
+}
+
+ul {
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-family: $font-sans-serif;
+            font-size: 18px;
+
+            &:link {
+                color: $white-color;
+            }
+
+            &:visited {
+                color: $background-color;
+            }
+
+            &:hover {
+                color: $border-color;
+            }
+
+            &:active {
+                color: $border-color;
+            }
+        }
+    }
+}
+
+table {
+    border-collapse: collapse;
+
+    th {
+        background-color: $primary-color;
+        color: $white-color
+    }
+
+    td {
+        color: $primary-color;
+    }
+}
+
+footer {
+    padding: $global-padding;
+}
+
+$sizes: (2em, 1.75em, 1.5em, 1.25em, 1em, 0.75em);
+
+@for $i from 1 through length($sizes) {
+    h#{$i} {
+        font-size: nth($sizes, $i);
+        font-family: $font-serif;
+    }
 }
